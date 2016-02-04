@@ -153,7 +153,7 @@ public class SimpleAndroidOCRActivity extends Activity {
 		_taken = true;
 
 		BitmapFactory.Options options = new BitmapFactory.Options();
-		options.inSampleSize = 2;
+		options.inSampleSize = 1;
 
 		Bitmap bitmap = BitmapFactory.decodeFile(_path, options);
 
