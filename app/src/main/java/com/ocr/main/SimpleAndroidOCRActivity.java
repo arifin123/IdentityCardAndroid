@@ -225,7 +225,7 @@ public class SimpleAndroidOCRActivity extends Activity {
 		Log.v(TAG, "OCRED TEXT: " + recognizedText);
 
 		if ( lang.equalsIgnoreCase("ind") ) {
-			recognizedText = recognizedText.replaceAll("^[a-zA-Z0-9:\\s]+", " ");
+			recognizedText = recognizedText.replaceAll("^[a-zA-Z0-9:\\s]*$+", " ");
 		}
 		
 		recognizedText = recognizedText.trim();
