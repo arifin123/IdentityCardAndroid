@@ -209,8 +209,7 @@ public class SimpleAndroidOCRActivity extends Activity {
 		TessBaseAPI baseApi = new TessBaseAPI();
 		baseApi.setDebug(true);
 		baseApi.init(DATA_PATH, lang, TessBaseAPI.OEM_TESSERACT_ONLY);
-//		baseApi.setPageSegMode(TessBaseAPI.PageSegMode.PSM_SINGLE_WORD);
-//		baseApi.init(DATA_PATH,lang, TessBaseAPI.OEM_TESSERACT_ONLY);
+		baseApi.setPageSegMode(TessBaseAPI.PageSegMode.PSM_AUTO_ONLY);
 		long startTime = System.nanoTime();
 		baseApi.setImage(bitmap);
 		
